@@ -11,7 +11,7 @@
 - 교재 예제는 Boot 4.0.7에서 동작하도록 필요한 부분만 고친다.
 
 ## 구조
-- Chapter03, Chapter04, Chapter05: 장별 실습 코드
+- Chapter03, Chapter04, Chapter05, Chapter06: 장별 실습 코드
 - 서비스 포트: composite 7001 / product 7002 / recommendation 7003 / review 7004
 - 교재 원본은 $BOOK_HOME 에 있다. 교재와 비교할 때 이 경로를 사용한다.
 
@@ -22,6 +22,10 @@
 - composite 오류 처리 switch에 `UNPROCESSABLE_CONTENT` 추가 (500 대신 422)
 - 테스트: `@AutoConfigureWebTestClient`, 422는 숫자로 비교, `spring.web.error.include-message`
 - 테스트 스타터 변경: `spring-boot-starter-actuator-test`, `spring-boot-starter-webflux-test`
+- 테스트 헬퍼의 상태 비교도 `.value()` 숫자로 한다 (6장 `isEqualTo(expectedStatus.value())`)
+- MongoDB 프로퍼티: `spring.data.mongodb.*` → `spring.mongodb.*` (yml과 Application 로그)
+- Testcontainers 2.x: `testcontainers-junit-jupiter`, `testcontainers-mongodb`, `testcontainers-mysql`
+- DB 테스트 스타터: `spring-boot-starter-data-mongodb-test`, `spring-boot-starter-data-jpa-test`. `@DataMongoTest`, `@DataJpaTest`는 `org.springframework.boot.data.*.test.autoconfigure` 패키지
 - Dockerfile 이미지: `21-jre-noble`
 - springdoc: 3.0.3 (2곳). composite Application 클래스는 OpenAPI 빈과 Jackson 3 RestTemplate을 모두 유지한다.
 
@@ -40,6 +44,7 @@
 
 ## 검증 명령
 ```bash
-cd ~/MSA/Chapter05 && ./gradlew build
-cd ~/MSA/Chapter05 && ./test-em-all.bash start stop
+cd ~/MSA/Chapter06 && ./gradlew build
+cd ~/MSA/Chapter06 && ./test-em-all.bash start stop
 ```
+6장부터 테스트가 Docker(Testcontainers)를 쓴다. 이전 장 컨테이너가 떠 있으면 먼저 내린다 (8080 충돌).
