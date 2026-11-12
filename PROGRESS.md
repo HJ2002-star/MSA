@@ -3,8 +3,8 @@
 시작할 때 이 파일을 읽고, 단계가 끝나면 갱신한다. 장별 메모는 `docs/notes/chNN.md`에 둔다.
 
 ## 현재 상태
-- 기준 커밋: `357aa5f` (`git log`로 확인)
-- 다음 작업: 10장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
+- 기준 커밋: `bc2470b` (`git log`로 확인)
+- 다음 작업: 11장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
 
 ## 완료
 | 장 | 범위 | 상태 |
@@ -15,6 +15,7 @@
 | 6장 | 데이터베이스 영속성 (쪽수 확인 필요) | 완료, `docs/notes/ch06.md` |
 | 7장 | 리액티브 + 메시징 (쪽수 확인 필요) | RabbitMQ·Kafka·파티션 검증 완료, `docs/notes/ch07.md` |
 | 9장 | Eureka 서비스 디스커버리 (쪽수 확인 필요) | build·RabbitMQ test-em-all 통과 (노트는 로컬 다운로드 폴더 MSA-notes) |
+| 10장 | Spring Cloud Gateway (쪽수 확인 필요) | 전체 build·RabbitMQ test-em-all 통과, `docs/notes/ch10.md` |
 
 ## 진행 중
 - 3장 수동 복습: ③ p.64~67 api Java, 2/14 진행 중
