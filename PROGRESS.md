@@ -4,7 +4,7 @@
 
 ## 현재 상태
 - 기준 커밋: `bc2470b` (`git log`로 확인)
-- 다음 작업: 12장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
+- 다음 작업: 12장 커밋 (`.env` 처리 결정 필요), 이후 13장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
 
 ## 완료
 | 장 | 범위 | 상태 |
@@ -17,6 +17,7 @@
 | 9장 | Eureka 서비스 디스커버리 (쪽수 확인 필요) | build·RabbitMQ test-em-all 통과 (노트는 로컬 다운로드 폴더 MSA-notes) |
 | 10장 | Spring Cloud Gateway (쪽수 확인 필요) | 전체 build·RabbitMQ test-em-all 통과, `docs/notes/ch10.md` |
 | 11장 | 보안 HTTPS·OAuth2 (쪽수 확인 필요) | 전체 build·RabbitMQ test-em-all 통과, `docs/notes/ch11.md` |
+| 12장 | Config Server (쪽수 확인 필요) | build(review 간헐 실패 제외)·RabbitMQ test-em-all 통과, `docs/notes/ch12.md` |
 
 ## 진행 중
 - 3장 수동 복습: ③ p.64~67 api Java, 2/14 진행 중
