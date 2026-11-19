@@ -3,8 +3,8 @@
 시작할 때 이 파일을 읽고, 단계가 끝나면 갱신한다. 장별 메모는 `docs/notes/chNN.md`에 둔다.
 
 ## 현재 상태
-- 기준 커밋: `2250b9e` (`git log`로 확인)
-- 다음 작업: 18장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
+- 기준 커밋: `fd7bfce` (`git log`로 확인)
+- 다음 작업: 19장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음. 18장 K8s(Istio) test-em-all은 재검증 필요
 
 ## 완료
 | 장 | 범위 | 상태 |
@@ -23,6 +23,7 @@
 | 15장 | 쿠버네티스 소개 (쪽수 확인 필요) | build 통과, minikube nginx 실습 확인(클러스터 삭제), `docs/notes/ch15.md` |
 | 16장 | 쿠버네티스 배포·Helm (쪽수 확인 필요) | build·Compose·dev-env K8s test-em-all 통과. K8s 간헐 지연 원인 불명, `docs/notes/ch16.md` |
 | 17장 | Config Server·Gateway를 쿠버네티스로 대체 (쪽수 확인 필요) | build·Compose·K8s Ingress test-em-all 통과, `docs/notes/ch17.md` |
+| 18장 | 서비스 메시 Istio (쪽수 확인 필요) | build·Compose test-em-all 통과. **K8s(Istio) test-em-all 미완료**(간헐 정체), `docs/notes/ch18.md` |
 
 ## 진행 중
 - 3장 수동 복습: ③ p.64~67 api Java, 2/14 진행 중
