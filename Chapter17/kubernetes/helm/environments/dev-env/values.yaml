@@ -1,0 +1,51 @@
+ingress:
+  host: minikube.me
+  paths:
+    - path: /oauth2
+      service: auth-server
+    - path: /login
+      service: auth-server
+    - path: /error
+      service: auth-server
+    - path: /product-composite
+      service: product-composite
+    - path: /actuator/health
+      service: product-composite
+    - path: /openapi
+      service: product-composite
+
+
+rabbitmq:
+  envFromSecretRefs:
+    - rabbitmq-server-credentials
+
+mongodb:
+  envFromSecretRefs:
+    - mongodb-server-credentials
+
+mysql:
+  envFromSecretRefs:
+    - mysql-server-credentials
+
+auth-server:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+
+product:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mongodb-credentials
+
+recommendation:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mongodb-credentials
+
+review:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mysql-credentials
+
+product-composite:
+  envFromSecretRefs:
+    - rabbitmq-credentials
