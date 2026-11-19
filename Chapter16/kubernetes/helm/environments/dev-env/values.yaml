@@ -1,0 +1,33 @@
+mysql:
+  env:
+    MYSQL_DATABASE: review-db
+    MYSQL_USER: user
+
+config-server:
+  envFromSecretRefs:
+    - config-server-secrets
+
+gateway:
+  envFromSecretRefs:
+    - config-client-credentials
+
+auth-server:
+  envFromSecretRefs:
+    - config-client-credentials
+
+product:
+  envFromSecretRefs:
+    - config-client-credentials
+
+recommendation:
+  envFromSecretRefs:
+    - config-client-credentials
+
+review:
+  envFromSecretRefs:
+    - config-client-credentials
+
+product-composite:
+  envFromSecretRefs:
+    - config-client-credentials
+
