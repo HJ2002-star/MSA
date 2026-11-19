@@ -3,8 +3,8 @@
 시작할 때 이 파일을 읽고, 단계가 끝나면 갱신한다. 장별 메모는 `docs/notes/chNN.md`에 둔다.
 
 ## 현재 상태
-- 기준 커밋: `fd7bfce` (`git log`로 확인)
-- 다음 작업: 19장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음. 18장 K8s(Istio) test-em-all은 재검증 필요
+- 기준 커밋: `6002a85` (`git log`로 확인)
+- 다음 작업: 19장 커밋 대기, 이후 20장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음. 18장 K8s(Istio) test-em-all은 재검증 필요
 
 ## 완료
 | 장 | 범위 | 상태 |
@@ -24,6 +24,7 @@
 | 16장 | 쿠버네티스 배포·Helm (쪽수 확인 필요) | build·Compose·dev-env K8s test-em-all 통과. K8s 간헐 지연 원인 불명, `docs/notes/ch16.md` |
 | 17장 | Config Server·Gateway를 쿠버네티스로 대체 (쪽수 확인 필요) | build·Compose·K8s Ingress test-em-all 통과, `docs/notes/ch17.md` |
 | 18장 | 서비스 메시 Istio (쪽수 확인 필요) | build·Compose test-em-all 통과. **K8s(Istio) test-em-all 미완료**(간헐 정체), `docs/notes/ch18.md` |
+| 19장 | 로깅 EFK (쪽수 확인 필요) | 빌드 통과, EFK 로그 파싱·Kibana 확인(18장과 코드 동일), `docs/notes/ch19.md` |
 
 ## 진행 중
 - 3장 수동 복습: ③ p.64~67 api Java, 2/14 진행 중

@@ -1,0 +1,41 @@
+rabbitmq:
+  envFromSecretRefs:
+    - rabbitmq-server-credentials
+
+mongodb:
+  envFromSecretRefs:
+    - mongodb-server-credentials
+
+mysql:
+  envFromSecretRefs:
+    - mysql-server-credentials
+
+auth-server:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+
+product:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mongodb-credentials
+
+recommendation:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mongodb-credentials
+
+review:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+    - mysql-credentials
+
+product-composite:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+
+destinationRules:
+  - name: product-composite
+  - name: auth-server
+  - name: product
+  - name: recommendation
+  - name: review
