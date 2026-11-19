@@ -3,8 +3,8 @@
 시작할 때 이 파일을 읽고, 단계가 끝나면 갱신한다. 장별 메모는 `docs/notes/chNN.md`에 둔다.
 
 ## 현재 상태
-- 기준 커밋: `133f8a2` (`git log`로 확인)
-- 다음 작업: 14장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
+- 기준 커밋: `de87a47` (`git log`로 확인)
+- 다음 작업: 15장 (쪽수 확인 필요). 8장은 개념 장이라 코드 없음
 
 ## 완료
 | 장 | 범위 | 상태 |
@@ -19,6 +19,7 @@
 | 11장 | 보안 HTTPS·OAuth2 (쪽수 확인 필요) | 전체 build·RabbitMQ test-em-all 통과, `docs/notes/ch11.md` |
 | 12장 | Config Server (쪽수 확인 필요) | build(review 간헐 실패 제외)·RabbitMQ test-em-all 통과, `docs/notes/ch12.md` |
 | 13장 | Resilience4j (쪽수 확인 필요) | build(review 간헐 실패 제외)·RabbitMQ test-em-all(서킷 브레이커 포함) 통과, `docs/notes/ch13.md` |
+| 14장 | 분산 추적 Zipkin (쪽수 확인 필요) | build·RabbitMQ test-em-all 통과, Zipkin 추적 직접 확인, `docs/notes/ch14.md` |
 
 ## 진행 중
 - 3장 수동 복습: ③ p.64~67 api Java, 2/14 진행 중
